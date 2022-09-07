@@ -1,0 +1,136 @@
+
+<section>
+<div class="all-div">
+
+
+  <h1>Clientes</h1>
+  <br>
+    {{#if emptyClientes}}
+      <p>Sem usuarios cadastrados</p>
+      
+    {{/if}}
+    
+    {{#each cliente}}
+        <b>{{this.nome}}</b> - 
+          <form action="/bolos/updatestatus" method="POST" style="display: inline;">
+            <input type="hidden" name="id" value={{this.id}}>
+            <input type="hidden" name="status" value={{this.status}}>
+            <button type="submit" class="btn btn-success btn">
+              {{#if this.status}}
+                desabilitar
+              {{else}}
+                habilitar
+              {{/if}}
+            </button>
+          </form>
+          
+          {{!-- <form action="/bolos/edit/{{this.id}}" style="display: inline;">
+              <input type="submit" value="editar" />
+          </form> --}}
+          
+          <form action="/bolos/remove" method="POST" style="display: inline;">
+            <input type="hidden" name="id" value={{this.id}}>
+            <button type="submit" class="btn btn-danger">
+              excluir
+            </button>
+          </form>
+          
+          <button type="button" class="btn btn-primary"><a href="/bolos/edit/{{this.id}}" style="color: white; text-decoration: none;">editar</a></button>
+          
+      <hr>
+    {{/each}}
+    
+    <button type="button" class="btn btn-dark"><a href="/bolos/add" style="text-decoration: none; color: white;">Add</a></button><br><br>
+    
+</div>
+<br>
+<div class="all-div">
+  <h1>Promoções</h1><br>
+
+  <form action="/bolos/updatepromo" method="POST" enctype="multipart/form-data">
+    <b>Promoção</b><br>
+    <label for="nome"></label>
+    <input class="form-control" type="text" name="produto" placeholder="Produto"><br>
+    <input class="form-control" type="text" name="preco" placeholder="Preço"><br>
+    <input class="form-control" type="file" name="sampleFile" accept="image/*"/><br>
+    <label for="id"><b>ID:</b></label>
+    <input type="number" id="id" name="id" ><br><br><br>
+    <input class="btn btn-primary btn" style="background-color: #7D3436" type="submit" value="Inserir"><br><br>
+  </form>
+
+</div>
+
+<br>
+
+<div class="all-div">
+  <h1>Sobre</h1><br>
+
+  <form action="/bolos/updatesobre" method="POST" enctype="multipart/form-data">
+    <b>Sobre</b><br>
+    {{!-- <input class="form-control" type="text" name="produto" placeholder="Texto"><br> --}}
+    <textarea class="form-control" type="text" name="sobretxt" rows="3"></textarea><br>
+    <input class="form-control" type="file" name="sampleFile" accept="image/*"/><br>
+    <br><br><br>
+    <input class="btn btn-primary btn" style="background-color: #7D3436" type="submit" value="Inserir"><br><br>
+  </form>
+
+</div>
+
+</section>
+
+<style>
+  @font-face {
+    font-family: 'SF Compact Text';
+    src: url('/fonts/SFCompactText-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Inter SemiBold';
+    src: url('/fonts/Inter-SemiBold.ttf') format('truetype');
+  }
+
+  section{
+    width: 100%;
+    background-color: #F7EAE2;
+    text-align: center;
+    justify-content: center;
+    
+  }
+
+  section h1{
+    font-size: 50px; 
+    color: #7D3436;
+    font: bold;
+    font-family: 'SF Compact Text';
+  }
+
+  section b{
+    font-family: 'Inter SemiBold';
+  }
+
+  .all-div{
+
+    width: 520px;
+    margin: auto;
+    background-color: #DAA89F;
+    border-radius: 3ch;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .all-div #id{
+    width: 60px;
+    
+  }
+
+  .form-control{
+    
+    
+  }
+</style>
