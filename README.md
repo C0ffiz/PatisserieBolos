@@ -10,8 +10,8 @@ A CRUD for saving clients and editing homepage photos and text
 
 ### Dependencies
 
-NodeJs
-Handlebars
+[NodeJs](https://nodejs.org/en/download/prebuilt-installer/current)
+[Handlebars](https://handlebarsjs.com/installation/)
 
 ### Installing
 
