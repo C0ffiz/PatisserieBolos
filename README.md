@@ -1,10 +1,10 @@
-# Project Title
+# PatisserieBolos
 
-Simple overview of use/purpose.
+Website in NodeJs, Handlebars and Sequelize
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+A CRUD for saving clients and editing homepage photos and text
 
 ## Getting Started
 
@@ -39,7 +39,7 @@ Handlebars
 * How to run the program
 * Step-by-step bullets
 ```
-code blocks for commands
+node index.js
 ```
 
 
