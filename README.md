@@ -12,6 +12,7 @@ A CRUD for saving clients and editing homepage photos and text
 
 [NodeJs](https://nodejs.org/en/download/prebuilt-installer/current)
 [Handlebars](https://handlebarsjs.com/installation/)
+[Sequelize](https://sequelize.org/docs/v6/getting-started/)
 
 ### Installing
 
