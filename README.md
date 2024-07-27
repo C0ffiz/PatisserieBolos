@@ -31,5 +31,4 @@ code blocks for commands
 
 Contributors names and contact info
 
-ex. [Jp](https://github.com/JPBaraunaDEV)  
 ex. [Coffee](github.com/C0ffiz)
