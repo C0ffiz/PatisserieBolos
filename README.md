@@ -208,7 +208,7 @@ A aplicação estará disponível em: **http://localhost:3000**
 ## 📝 Melhorias Futuras
 
 - [ ] Sistema de autenticação para o dashboard
-- [ ] Upload de múltiplas imagens
+- [x] Upload de múltiplas imagens
 - [ ] Sistema de pedidos online
 - [ ] Integração com gateway de pagamento
 - [ ] API RESTful
