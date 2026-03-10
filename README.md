@@ -204,25 +204,6 @@ A aplicação estará disponível em: **http://localhost:3000**
 ## 🌐 Integrações
 
 - **Google Maps**: Localização da loja física
-- **Instagram**: [@patisseriebolos](https://www.instagram.com/patisseriebolos/)
-- **WhatsApp**: Contato direto via [WhatsApp Business](https://contate.me/patisseriebolos/)
-
-## 📍 Localização
-
-**Pâtisserie Bolos**  
-CND 02, Lt 01, Loja 8  
-CEP: 72120-025  
-Taguatinga Norte, Brasília - DF
-
-## 🤝 Contribuindo
-
-Contribuições são bem-vindas! Sinta-se à vontade para:
-
-1. Fazer um fork do projeto
-2. Criar uma branch para sua feature (`git checkout -b feature/NovaFuncionalidade`)
-3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
-4. Push para a branch (`git push origin feature/NovaFuncionalidade`)
-5. Abrir um Pull Request
 
 ## 📝 Melhorias Futuras
 
